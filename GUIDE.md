@@ -55,7 +55,7 @@ To add a new listing below the **Fieldwork** map, add the following below the `<
         <table>
             <tr>
                 <td>
-                    <img class="img-circle img-responsive" src="assets/images/_NEW FIELDWORK PHOTO_" alt="">
+                    <img class="img-circle img-responsive" src="assets/images/FIELDWORK PHOTO" alt="">
                 </td>
                 <td></td>
                 <td>
