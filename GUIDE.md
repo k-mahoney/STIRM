@@ -53,20 +53,20 @@ To add a new listing below the **Fieldwork** map, add the following below the `<
 
     <div class="col-md-6">
         <table>
-                <tr>
-                    <td>
-                        <img class="img-circle img-responsive" src="assets/images/_NEW FIELDWORK PHOTO_" alt="">
-                    </td>
-                    <td></td>
-                    <td>
-                        <h4><b>Location, Date</b></h4>
-    					<p>Description of fieldwork.</p>
-                        <br>
-    					<a href="http://stirm.johnshopkins.edu/photos.html"><i class="fa fa-file-image-o"></i> Photos</a>
-    					<br>
-                    </td>
-                </tr>
+            <tr>
+                <td>
+                    <img class="img-circle img-responsive" src="assets/images/_NEW FIELDWORK PHOTO_" alt="">
+                </td>
+                <td></td>
+                <td>
+                    <h4><b>Location, Date</b></h4>
+    				<p>Description of fieldwork.</p>
+                    <br>
+    				<a href="http://stirm.johnshopkins.edu/photos.html"><i class="fa fa-file-image-o"></i> Photos</a>
+    				<br>
+                 </td>
+             </tr>
         </table>
     </div>
             
-#### Fieldwork
+#### People
