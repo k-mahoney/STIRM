@@ -62,7 +62,7 @@ To add a new listing below the **Fieldwork** map, add the following below the `<
                     <h4><b>Location, Date</b></h4>
     				<p>Description of fieldwork.</p>
                     <br>
-    				<a href="http://stirm.johnshopkins.edu/photos.html"><i class="fa fa-file-image-o"></i> Photos</a>
+    				<a href="LINK TO PHOTOS"><i class="fa fa-file-image-o"></i> Photos</a>
     				<br>
                  </td>
              </tr>
