@@ -1,5 +1,19 @@
 # STIRM: Web Content Guide
 
+#### Server Access
+
+Note: If you're connecting from outside the JHU network, you must first connect to the JH VPN (JHPulse). Information about the VPN is at http://www.it.johnshopkins.edu/services/network/JHPulse/ as well as directions on installing and configuring it.
+
+**Mac OSX**
+
+1. In the Finder menu select `Go` then the last option, `Connect to Server`.
+2. In the `Server Address` field enter `https://webdav.johnshopkins.edu/your-JHED-id` where “your-JHED-id” is your JHED account name.
+3. Click the button with the plus sign to add this to the `Favorite Servers` menu.
+4. Click `Connect`.
+5. Enter your JHED ID and password in the pop-up window.
+
+For directions on other operating systems, see the JHU page on [WebDav Access](https://it.johnshopkins.edu/services/webservices/webdav/).
+
 #### Fieldwork
 
 To add a new point to the **Fieldwork** map, first you'll have to add a new location (e.g. `loc5`) to the listing beneath `function initialize()`. Then, add a new variable declaration to the listing beginning with `var marker1 = new google.maps.Marker`. Refer to the code excerpt below:
