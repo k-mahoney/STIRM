@@ -1,0 +1,233 @@
+<!-- STIRM Web 01/22/2015, Kara Mahoney -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/shield_logo.png">
+    <title>STIRM: Fieldwork</title>
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/stirm.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- Google Maps Insert -->
+<script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu7_jCUg6WTbkaJyGoWeAXqrOBB4oQJzw&sensor=false"></script>
+<script type="text/javascript">
+	function initialize() {
+		loc1 = new google.maps.LatLng(-35.909,-72.733);
+		loc2 = new google.maps.LatLng(-43.53,172.620278);
+		loc3 = new google.maps.LatLng(32.128,-115.303);
+		loc4 = new google.maps.LatLng(40.638967,-74.251099);
+		var mapOptions = {
+			center: new google.maps.LatLng(12,0),
+			zoom: 2.13
+		};
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		var marker1 = new google.maps.Marker({
+			position: loc1,
+			map: map,
+			title: 'Chile, 2010'
+		});
+		var marker2 = new google.maps.Marker({
+			position: loc2,
+			map: map,
+			title: 'Christchurch, 2010-2011'
+		});
+		var marker3 = new google.maps.Marker({
+			position: loc3,
+			map: map,
+			title: 'Easter Earthquake, 2010'
+		});
+		var marker4 = new google.maps.Marker({
+			position: loc4,
+			map: map,
+			title: 'Hurricane Sandy, 2012'
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><b>STIRM</b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="publications.html">Publications</a>
+                            </li>
+                            <li>
+                                <a href="fieldwork.html">Field Work</a>
+                            </li>
+                            <li>
+                                <a href="collaborators.html">Collaborators</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="people.html">People</a>
+                    </li>
+                    <li>
+                        <a href="education.html">Education</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="academic_service.html">Academic Service</a>
+                            </li>
+                            <li>
+                                <a href="professional_service.html">Professional Service</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+						<a href="news.html">News</a>
+					</li>
+					<li>
+						<a href="photos.html">Photos</a>
+					</li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+		<div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Fieldwork</h2>
+            </div>
+			
+			<div class="col-md-12">
+				<div id="map-canvas"></div>
+			</div>
+		</div>
+			
+		<hr>
+		
+		<div class="row">
+			<div class="col-md-6">
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img-circle img-responsive" src="assets/images/placeholder.jpg" alt="">
+                        </td>
+                        <td></td>
+                        <td>
+                            <h4><b>Chile, 2010</b></h4>
+							<p>Description of fieldwork.</p>
+                            <br>
+							<a href="photos.html"><i class="fa fa-file-image-o"></i> Photos</a>
+							<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+			
+			<div class="col-md-6">
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img-circle img-responsive" src="assets/images/placeholder.jpg" alt="">
+                        </td>
+                        <td></td>
+                        <td>
+                            <h4><b>Christchurch, 2010-2011</b></h4>
+							<p>Description of fieldwork.</p>
+                            <br>
+							<a href="photos.html"><i class="fa fa-file-image-o"></i> Photos</a>
+							<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+			
+			<div class="col-md-6">
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img-circle img-responsive" src="assets/images/placeholder.jpg" alt="">
+                        </td>
+                        <td></td>
+                        <td>
+                            <h4><b>Easter Earthquake, 2010</b></h4>
+							<p>Description of fieldwork.</p>
+                            <br>
+							<a href="photos.html"><i class="fa fa-file-image-o"></i> Photos</a>
+							<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+			
+			<div class="col-md-6">
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img-circle img-responsive" src="assets/images/placeholder.jpg" alt="">
+                        </td>
+                        <td></td>
+                        <td>
+                            <h4><b>Hurricane Sandy, 2012</b></h4>
+							<p>Description of fieldwork.</p>
+                            <br>
+							<a href="photos.html"><i class="fa fa-file-image-o"></i> Photos</a>
+							<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+	</div>
+	
+	<hr>
+	
+	<div class="container">
+        <!-- FOOTER -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+					<div class="col-md-3">
+						<img src="assets/images/uni_logo.png" alt="">
+					</div>
+					<div class="col-md-9">
+						<br><h5>STIRM Lab, Department of Civil Engineering</h5>
+					</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!-- STIRM Web 01/22/2015, Kara Mahoney -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/shield_logo.png">
+    <title>STIRM: Contact</title>
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/stirm.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+</head>
+
+<!-- Google Maps Insert -->
+<script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu7_jCUg6WTbkaJyGoWeAXqrOBB4oQJzw&sensor=false"></script>
+<script type="text/javascript">
+	function initialize() {
+		loc = new google.maps.LatLng(39.3277209,-76.6207765);
+		var mapOptions = {
+			center: loc,
+			zoom: 12,
+		};
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		var marker = new google.maps.Marker({
+			position: loc,
+			map: map,
+			title: 'Latrobe Hall'
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><b>STIRM</b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="publications.html">Publications</a>
+                            </li>
+                            <li>
+                                <a href="fieldwork.html">Field Work</a>
+                            </li>
+                            <li>
+                                <a href="collaborators.html">Collaborators</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="people.html">People</a>
+                    </li>
+                    <li>
+                        <a href="education.html">Education</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="academic_service.html">Academic Service</a>
+                            </li>
+                            <li>
+                                <a href="professional_service.html">Professional Service</a>
+                            </li>
+                        </ul>
+                    </li>
+                   	<li>
+						<a href="news.html">News</a>
+					</li>
+					<li>
+						<a href="photos.html">Photos</a>
+					</li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>
+                    <li class="active">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+	
+		<!-- CONTACT -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Contact Us</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="list-group">
+						<a class="list-group-item" href="mailto:jmitrani@jhu.edu"><i class="fa fa-envelope"></i>&nbsp; Email</a>
+						<a class="list-group-item"><i class="fa fa-phone fa-lg"></i>&nbsp; (410) 516-7763</a>
+						<a class="list-group-item"><i class="fa fa-fax fa-lg"></i>&nbsp; (410) 516-7473</a>
+						<a class="list-group-item" href="https://www.google.com/maps/place/Latrobe+Hall,+Johns+Hopkins+University,+Baltimore,+MD+21218/@39.3277209,-76.6207765,17z/data=!3m1!4b1!4m2!3m1!1s0x89c804dfa65e2a7b:0xee939e37a1db3fb3"><i class="fa fa-map-marker fa-lg"></i>&nbsp;&nbsp; Address</a>
+						<a class="list-group-item">
+							Johns Hopkins University<br>
+							Dept. of Civil Engineering<br>
+							202 Latrobe<br>
+							3400 N. Charles Street<br>
+							Baltimore, MD 21218<br>
+						</a>
+						<a class="list-group-item" href="http://webapps.jhu.edu/jhuniverse/information_about_hopkins/visitor_information/how_to_get_here/homewood_campus/pdf/homewood_campus_map.pdf"><i class="fa fa-compass fa-lg"></i>&nbsp; Map of Homewood Campus</a>
+						<a class="list-group-item" href="http://ts.jhu.edu/Parking/Visitors/"><i class="fa fa-car"></i>&nbsp; Transportation Information</a>
+						<a class="list-group-item" href="http://engineering.jhu.edu/civil/"><i class="fa fa-university"></i>&nbsp; Dept. of Civil Engineering Website</a>
+					</div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+						<div id="map-canvas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<br>
+                <p>Webpage created by <a href="people.html">Kara Mahoney</a>, and maintained by <a href="people.html">Megan Boston</a>, please direct any issues or questions <a href="mailto:mboston5@jhu.edu">here</a>.
+            </div>
+		</div>
+	</div>
+	
+	
+	<hr>
+	
+	<div class="container">
+        <!-- FOOTER -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+					<div class="col-md-3">
+						<img src="assets/images/uni_logo.png" alt="">
+					</div>
+					<div class="col-md-9">
+						<br><h5>STIRM Lab, Department of Civil Engineering</h5>
+					</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+	
+	<!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
